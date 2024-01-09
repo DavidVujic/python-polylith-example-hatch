@@ -1,4 +1,4 @@
-FROM python:3.10
+FROM python:3.12
 
 ARG wheel=message_fastapi_project-0.1.0-py3-none-any.whl
 

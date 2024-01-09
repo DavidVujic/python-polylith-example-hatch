@@ -5,7 +5,7 @@ Navigate to this folder (where the `pyproject.toml` file is)
 
 Run:
 ``` shell
-poetry build-project
+hatch build
 ```
 
 ## Build a docker image
