@@ -16,14 +16,10 @@ dependencies = [
   "functions-framework~=3.5.0",
   "sqlalchemy~=2.0.23",
   "confluent-kafka~=2.3.0",
-]
-
-[project.optional-dependencies]
-dev = [
   "black~=23.12.1",
   "isort~=5.13.2",
   "mypy~=1.8.0",
-  "pytest~=7.4.3"
+  "pytest~=7.4.3",
 ]
 
 [tool.hatch.envs.default]
