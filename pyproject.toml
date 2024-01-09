@@ -9,10 +9,7 @@ description = 'A Python Polylith example code repo'
 readme = "README.md"
 requires-python = ">=3.8"
 license = "MIT"
-keywords = []
 authors = [{ name = "David Vujic" }]
-
-
 dependencies = [
   "fastapi~=0.106.0",
   "uvicorn~=0.25.0",
@@ -26,12 +23,8 @@ dev = [
   "black~=23.12.1",
   "isort~=5.13.2",
   "mypy~=1.8.0",
-  "flake8~=6.1.0",
   "pytest~=7.4.3"
 ]
-
-[tool.isort]
-profile = "black"
 
 [tool.hatch.envs.default]
 type = "virtual"
@@ -40,17 +33,6 @@ python = "3.12"
 
 [tool.hatch.build]
 packages = ["components/example", "bases/example"]
-#packages = [
-#  "bases/example/consumer",
-#  "bases/example/greet_api",
-#  "bases/example/greet_aws_lambda",
-#  "bases/example/greet_gcp_function",
-#  "bases/example/message_api",
-#  "components/example/database",
-#  "components/example/dictionaries",
-#  "components/example/greeting",
-#  "components/example/kafka",
-#  "components/example/log",
-#  "components/example/message",
-#  "components/example/schema",
-#]
+
+[tool.isort]
+profile = "black"

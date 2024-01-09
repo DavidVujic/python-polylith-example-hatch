@@ -6,7 +6,7 @@ from example.log import get_logger
 logger = get_logger("greet-aws-lambda-logger")
 
 
-def handler(event: dict, context: dict) -> dict:
+def handler(_event: dict, _context: dict) -> dict:
     logger.info("The Lambda handler was invoked.")
 
     body = {"message": greeting.hello_world()}

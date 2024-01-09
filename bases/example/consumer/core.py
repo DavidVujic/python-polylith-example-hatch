@@ -4,7 +4,7 @@ logger = log.get_logger("Consumer-app-logger")
 
 
 def parse_message(topic: str, key: str, value: str) -> None:
-    logger.info(f"Consumed message with topic={topic}, key={key}, value={value}")
+    logger.info("Consumed message with topic=%s, key=%s, value=%s", topic, key, value)
 
 
 def main() -> None:

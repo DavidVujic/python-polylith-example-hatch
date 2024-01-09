@@ -20,7 +20,7 @@ def _acked(err, msg):
 
     topic, key, value = parse_message(msg)
 
-    logger.info(f"Produced: topic={topic}: key={key} value={value}")
+    logger.info("Produced: topic=%s key=%s value=%s", topic, key, value)
 
 
 @cache
