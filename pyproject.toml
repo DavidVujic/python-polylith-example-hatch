@@ -28,7 +28,7 @@ path = ".venv"
 python = "3.12"
 
 [tool.hatch.build]
-packages = ["components/example", "bases/example"]
+dev-mode-dirs = ["components", "bases", "development", "."]
 
 [tool.isort]
 profile = "black"
