@@ -26,6 +26,7 @@ dependencies = [
 type = "virtual"
 path = ".venv"
 python = "3.12"
+dependencies = ["polylith-cli"]
 
 [tool.hatch.build]
 dev-mode-dirs = ["components", "bases", "development", "."]
