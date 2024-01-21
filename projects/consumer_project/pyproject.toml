@@ -1,5 +1,5 @@
 [build-system]
-requires = ["hatchling"]
+requires = ["hatchling", "hatch-polylith-bricks"]
 build-backend = "hatchling.build"
 
 [project]
@@ -15,9 +15,12 @@ dependencies = [
 ]
 
 [project.scripts]
-consumer = "example.consumer.core:main"
+consumer = "my_custom_ns.example.consumer.core:main"
 
-[tool.hatch.build.force-include]
+[tool.hatch.build.hooks.polylith-bricks]
+top-namespace = "my_custom_ns"
+
+[tool.polylith.bricks]
 "../../bases/example/consumer" = "example/consumer"
 "../../components/example/log" = "example/log"
 "../../components/example/kafka" = "example/kafka"
