@@ -1,5 +1,5 @@
 [build-system]
-requires = ["hatchling"]
+requires = ["hatchling", "hatch-polylith-bricks"]
 build-backend = "hatchling.build"
 
 [project]
@@ -17,7 +17,7 @@ dependencies = [
   "confluent-kafka~=2.3.0",
 ]
 
-[tool.hatch.build.force-include]
+[tool.polylith.bricks]
 "../../bases/example/message_api" = "example/message_api"
 "../../components/example/database" = "example/database"
 "../../components/example/dictionaries" = "example/dictionaries"

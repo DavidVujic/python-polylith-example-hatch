@@ -17,7 +17,7 @@ dependencies = [
 [project.scripts]
 consumer = "my_custom_ns.example.consumer.core:main"
 
-[tool.hatch.build.hooks.polylith-bricks]
+[tool.polylith.build]
 top-namespace = "my_custom_ns"
 
 [tool.polylith.bricks]

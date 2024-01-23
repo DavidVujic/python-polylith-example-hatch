@@ -33,7 +33,7 @@ dependencies = [
 [tool.hatch.build]
 dev-mode-dirs = ["components", "bases", "development", "."]
 
-[tool.hatch.build.force-include]
+[tool.polylith.bricks]
 "bases/example/message_api" = "example/message_api"
 "bases/example/consumer" = "example/consumer"
 "bases/example/greet_api" = "example/greet_api"

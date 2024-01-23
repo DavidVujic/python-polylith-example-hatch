@@ -15,10 +15,5 @@ namespace_packages = True
 explicit_package_bases = True
 ```
 
-### Tooling support
-Currently, there's tooling support for using Polylith in Python for `Poetry`.
-
-__Currently working on tooling support for Hatch too!__
-
-Have a look at this repository:
+Have a look at this repository for more information and documentation:
 [Python tools for the Polylith Architecture](https://github.com/DavidVujic/python-polylith)
