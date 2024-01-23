@@ -21,6 +21,8 @@ consumer = "example.consumer.core:main"
 "main.py" = "main.py" # added by the build process
 "requirements.txt" = "requirements.txt" # added by the build process
 
+[tool.hatch.build.hooks.polylith-bricks]
+
 [tool.polylith.bricks]
 "../../bases/example/greet_gcp_function" = "example/greet_gcp_function"
 "../../components/example/greeting" = "example/greeting"

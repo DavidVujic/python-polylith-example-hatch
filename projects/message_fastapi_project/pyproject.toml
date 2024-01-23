@@ -17,6 +17,8 @@ dependencies = [
   "confluent-kafka~=2.3.0",
 ]
 
+[tool.hatch.build.hooks.polylith-bricks]
+
 [tool.polylith.bricks]
 "../../bases/example/message_api" = "example/message_api"
 "../../components/example/database" = "example/database"
